@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
 
-  const API_KEY = ""
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY
 
   const [weatherData, setWeatherData] = useState(null)
   const [city, setCity] = useState("agartala");
