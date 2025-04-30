@@ -43,7 +43,6 @@ function App() {
       const forecastdata = await foreCastResponse.json()
       const dailyForecast = forecastdata.list.filter((item, index) => index % 8 === 0)
       setForecast(dailyForecast)
-      console.log(dailyForecast);
     } catch (err) {
       setError("Could not fetch data please try again");
     }
